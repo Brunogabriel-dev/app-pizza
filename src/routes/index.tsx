@@ -11,7 +11,14 @@ function Routes(){
 
   if(loading){
     return(
-      <View style={{ flex:1 }}>
+      <View 
+        style={{ 
+          flex:1, 
+          backgroundColor: '#f5f7fb', 
+          justifyContent: 'center', 
+          alignItems: 'center' 
+          }}
+      >
 
       </View>
     )
