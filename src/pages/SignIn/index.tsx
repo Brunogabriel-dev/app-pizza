@@ -22,11 +22,16 @@ export default function SignIn(){
            style={styles.input}
            placeholderTextColor="#f0f0f0"
         />
+
         <TextInput
            placeholder="Sua senha"
            style={styles.input}
            placeholderTextColor="#f0f0f0"
         />
+
+        <TouchableOpacity>
+          
+        </TouchableOpacity>
 
       </View>
 
