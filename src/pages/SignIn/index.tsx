@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   View, 
   Text, 
@@ -9,6 +9,7 @@ import {
 } from 'react-native'
 
 export default function SignIn(){
+  
   return(
     <View style={styles.container}>
       <Image
@@ -27,12 +28,12 @@ export default function SignIn(){
            placeholder="Sua senha"
            style={styles.input}
            placeholderTextColor="#f0f0f0"
+           secureTextEntry={true}
         />
 
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Acessar</Text>
         </TouchableOpacity>
-
       </View>
 
     </View>
@@ -74,6 +75,9 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   buttonText:{
-    
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#101026'
+
   }
 })
