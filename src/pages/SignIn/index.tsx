@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 
 export default function SignIn(){
-  
+  const [email, setEmail] = useState('')
   return(
     <View style={styles.container}>
       <Image
