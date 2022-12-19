@@ -12,7 +12,7 @@ export default function SignIn(){
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  
+
   return(
     <View style={styles.container}>
       <Image
@@ -25,6 +25,8 @@ export default function SignIn(){
            placeholder="Digite seu email"
            style={styles.input}
            placeholderTextColor="#f0f0f0"
+           value={email}
+           onChangeText={setEmail}
         />
 
         <TextInput
@@ -32,6 +34,8 @@ export default function SignIn(){
            style={styles.input}
            placeholderTextColor="#f0f0f0"
            secureTextEntry={true}
+           value={email}
+           onChangeText={setEmail}
         />
 
         <TouchableOpacity style={styles.button}>
