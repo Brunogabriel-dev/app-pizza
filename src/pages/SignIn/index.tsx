@@ -8,6 +8,8 @@ import {
   TouchableOpacity 
 } from 'react-native'
 
+import {} from '../../contexts/AuthContext'
+
 export default function SignIn(){
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
