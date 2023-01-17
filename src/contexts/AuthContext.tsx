@@ -28,9 +28,7 @@ export function AuthProvider(){
 
   return(
     <AuthContext.Provider value={{ user, isAuthenticated }}>
-
-    </AuthContext.Provider>
-
-    
+      {}
+    </AuthContext.Provider> 
   )
 }
