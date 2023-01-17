@@ -45,6 +45,12 @@ export function AuthProvider({children}: AuthProviderProps){
     setLoadingAuth(true)
 
     try{
+      const response = await api.post('/session',{
+        email,
+        password
+      })
+
+      console.log(response.data);
 
     }catch(err){
       console.log('erro ao acessar', err)
